@@ -43,8 +43,7 @@ Here are some ideas to get you started:
 
 ⚡ Fun fact: When I’m not coding, I enjoy playing chess, swimming...!
 
- #### Under developement 
 
 Linked-In [https://www.linkedin.com/in/rushikesh-desai/]
 
-Portfolio [https://web.njit.edu/~rrd7/]
+Portfolio [https://web.njit.edu/~rrd7/]      (#### Under developement)
