@@ -1,4 +1,7 @@
 ## 👋 Hi there, I am Rushi
+
+## Under developement
+
 <!--
 4	+
 **Revilush/Revilush** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -46,4 +49,4 @@ Here are some ideas to get you started:
 
 Linked-In [https://www.linkedin.com/in/rushikesh-desai/]
 
-Portfolio [https://web.njit.edu/~rrd7/]      (#### Under developement)
+Portfolio [https://web.njit.edu/~rrd7/]      
