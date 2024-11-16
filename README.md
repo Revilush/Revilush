@@ -1,4 +1,4 @@
-## Hi there 👋 I am Rushi
+## 👋 Hi there, I am Rushi
 
 <!--
 **Revilush/Revilush** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
