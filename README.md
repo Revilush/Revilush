@@ -1,6 +1,6 @@
 ## 👋 Hi there, I am Rushi
 
-## Under developement
+
 
 <!--
 4	+
@@ -29,7 +29,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 16	+
 -->
-
+### Under developement
 🏫 I'm a Computer Science graduate student at the New Jersey Institute of Technology, focused on blending my passion for development.  
 
 💼 I’m currently working on projects ranging from portfolio optimization using real-time data to financial modeling and big data processing.  
