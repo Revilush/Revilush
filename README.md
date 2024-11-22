@@ -44,7 +44,7 @@ Here are some ideas to get you started:
 
 🔭 Beyond academics, I actively explore new things in tech, especially Data science to stay updated in industry and ways to optimize real-world problems.
 
-⚡ Fun fact: When I’m not coding, I enjoy playing chess, swimming...!
+⚡ Fun fact: When I’m not coding, I enjoy playing chess, math puzzles...!
 
 
 Linked-In [https://www.linkedin.com/in/rushikesh-desai/]
