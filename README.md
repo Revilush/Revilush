@@ -49,4 +49,4 @@ Here are some ideas to get you started:
 
 Linked-In [https://www.linkedin.com/in/rushikesh-desai/]
 
-Portfolio [https://web.njit.edu/~rrd7/]      
+Portfolio [https://rushidesai.com/]      
