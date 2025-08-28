@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About Me – Rushi Desai</title>
+<title>Hello, Quarto – Rushi Desai</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -97,6 +152,35 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -129,12 +213,8 @@ cookieconsent.run({
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About Me</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -147,7 +227,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">About Me</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Hello, Quarto</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -161,9 +241,10 @@ cookieconsent.run({
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#skillsets" id="toc-skillsets" class="nav-link active" data-scroll-target="#skillsets">🚀 Skillsets</a></li>
-  <li><a href="#relevant-work-experience" id="toc-relevant-work-experience" class="nav-link" data-scroll-target="#relevant-work-experience">💼 Relevant Work Experience</a></li>
-  <li><a href="#outside-of-work" id="toc-outside-of-work" class="nav-link" data-scroll-target="#outside-of-work">🌱 Outside of Work</a></li>
+  <li><a href="#markdown" id="toc-markdown" class="nav-link active" data-scroll-target="#markdown">Markdown</a></li>
+  <li><a href="#code-cell" id="toc-code-cell" class="nav-link" data-scroll-target="#code-cell">Code Cell</a></li>
+  <li><a href="#equation" id="toc-equation" class="nav-link" data-scroll-target="#equation">Equation</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
 </nav>
@@ -176,7 +257,7 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
+<h1 class="title">Hello, Quarto</h1>
 </div>
 
 
@@ -193,107 +274,65 @@ cookieconsent.run({
 </header>
 
 
-<p>Hello there, I’m <strong>Rushi</strong>, turning deep learning, finance, and engineering into working systems.</p>
-<hr>
-<section id="skillsets" class="level3">
-<h3 class="anchored" data-anchor-id="skillsets">🚀 Skillsets</h3>
-<section id="programming-language-databases" class="level5">
-<h5 class="anchored" data-anchor-id="programming-language-databases">Programming language &amp; Databases</h5>
+<section id="markdown" class="level2">
+<h2 class="anchored" data-anchor-id="markdown">Markdown</h2>
+<p>Markdown is an easy to read and write text format:</p>
 <ul>
-<li>C, C++, Python, Java, R<br>
-</li>
-<li>AWS, Docker, Spark, Hadoop, Kafka, Flink, Airflow, Elasticsearch, Tableau<br>
-</li>
-<li>SQL server, MongoDB, Neo4j, Postgres</li>
+<li>It’s <em>plain text</em> so works well with version control</li>
+<li>It can be <strong>rendered</strong> into HTML, PDF, and more</li>
+<li>Learn more at: <a href="https://quarto.org/docs/authoring/" class="uri">https://quarto.org/docs/authoring/</a></li>
+<li>Lets see how this works:<span class="citation" data-cites="rrd7">(<a href="#ref-rrd7" role="doc-biblioref">Rush 1998</a>)</span> as</li>
 </ul>
 </section>
-<section id="data-science-machine-learning" class="level5">
-<h5 class="anchored" data-anchor-id="data-science-machine-learning">Data Science &amp; Machine Learning</h5>
-<ul>
-<li>Scikit-learn, Pandas, NLTK, TensorFlow, PyTorch</li>
-<li>CNNs, GNNs, Transformers, BERT, LLMs, RAG<br>
-</li>
-<li>Reinforcement Learning, Time-Series Analysis, System Design</li>
-</ul>
+<section id="code-cell" class="level2">
+<h2 class="anchored" data-anchor-id="code-cell">Code Cell</h2>
+<p>Here is a Python code cell:</p>
+<div id="cell-fig-polar" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="dv">0</span>,<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="walkthrough_files/figure-html/fig-polar-output-1.png" width="450" height="439" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A line plot on a polar axis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="mathematics-finance" class="level5">
-<h5 class="anchored" data-anchor-id="mathematics-finance">Mathematics &amp; Finance</h5>
-<ul>
-<li>Applied Statistics, Probability, Linear Algebra, Stochastic Calculus, Differential Equations<br>
-</li>
-<li>Financial Modeling and Portfolio Analysis, Market Risk Analysis</li>
-<li>Bloomberg Certificatoin (BMC)</li>
-</ul>
-<hr>
+<section id="equation" class="level2">
+<h2 class="anchored" data-anchor-id="equation">Equation</h2>
+<p>Use LaTeX to write equations:</p>
+<p><span class="math display">\[
+\chi' = \sum_{i=1}^n k_i s_i^2
+\]</span></p>
 </section>
-</section>
-<section id="relevant-work-experience" class="level3">
-<h3 class="anchored" data-anchor-id="relevant-work-experience">💼 Relevant Work Experience</h3>
-<section id="research-assistant" class="level4">
-<h4 class="anchored" data-anchor-id="research-assistant">🎓 Research Assistant</h4>
-<p><span class="gray">Martin Tuchman School of Management, NJIT | Sept 2024 - May 2025</span></p>
-<ul>
-<li>Researched reinforcement learning and attention-based models to optimize portfolio strategies (Monte Carlo simulation, Black-Scholes model).</li>
-<li>Applied multimodal AI and statistical methods for financial modeling and time-series analysis (wavelet analysis, stochastic calculus).</li>
-</ul>
-</section>
-<section id="data-analyst-njit-may-2024-may-2025" class="level4">
-<h4 class="anchored" data-anchor-id="data-analyst-njit-may-2024-may-2025">📊 Data Analyst – NJIT (May 2024 – May 2025)</h4>
-<p><span class="gray">NJIT | May 2024 - May 2025</span></p>
-<ul>
-<li>Designed predictive models for application trends and demographics, improving forecasting accuracy.</li>
-<li>Engineered ETL workflows and data models to optimize admissions and financial aid strategies.</li>
-<li>Presented data-driven insights to leadership, shaping institutional decision-making.</li>
-</ul>
-</section>
-<section id="data-scientist-flairminds-software-oct-2022-june-2023" class="level4">
-<h4 class="anchored" data-anchor-id="data-scientist-flairminds-software-oct-2022-june-2023">🤖 Data Scientist – Flairminds Software (Oct 2022 – June 2023)</h4>
-<p><span class="gray">Flairminds Software | Oct 2022 - Jun 2023</span></p>
-<ul>
-<li>Built an NLP product matching engine (BERT, spaCy) to improve categorization and search relevance.</li>
-<li>Applied computer vision architectures (VGG, Inception, ResNet, YOLO-NAS), improving search accuracy by 30%.</li>
-<li>Delivered a document parsing + Elasticsearch retrieval system with a React UI on AWS, enabling real-time, query-based insights.</li>
-</ul>
-</section>
-<section id="full-stack-developer" class="level4">
-<h4 class="anchored" data-anchor-id="full-stack-developer">💻 Full-Stack Developer</h4>
-<p><span class="gray">E-venu Computers | Sept 2021 – Aug 2022</span></p>
-<ul>
-<li>Built a supply chain system with predictive sales modeling and recommendation engines, improving inventory planning and customer engagement.</li>
-<li>Boosted system efficiency with web optimizations (caching, compression) and MongoDB tuning, reducing latency and scaling throughput.</li>
-</ul>
-</section>
-<section id="software-developer" class="level4">
-<h4 class="anchored" data-anchor-id="software-developer">🏛️ Software Developer</h4>
-<p><span class="gray">Rheal Software | Nov 2020 – July 2021</span></p>
-<ul>
-<li>Built <strong>Judicial web systems</strong> for U.S. counties (case submissions, reviews, warrants, video call integration).<br>
-</li>
-<li>Developed <strong>Healthcare Management Systems</strong> for insurance processing and client-specific customizations.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="outside-of-work" class="level3">
-<h3 class="anchored" data-anchor-id="outside-of-work">🌱 Outside of Work</h3>
-<ul>
-<li>Hackathons: Winner of National Hackathon (2017) and MLH HackNJIT 2023 <a href="https://devpost.com/rrd7">devpost.com/rrd7</a></li>
-<li>Investment Club: Equity Analyst, managed <strong>$75K</strong> NJIT fund.<br>
-</li>
-<li>Bloomberg Trading Challenge 2024: Led team to <strong>14% ROI</strong> on $1M virtual portfolio.<br>
-</li>
-<li>Key initatives: Built models for derivatives pricing with RL, time-series forecasting with PySpark, and GAN-based music generation.</li>
-</ul>
-<hr>
-<!-- ### Download My Resume -->
-<!-- You can download my resume here: -->
-<!-- [📄 Download Resume](images/Rush_Resume.pdf){target="_blank"} -->
-<p><a href="images/Rush_Resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a></p>
+<section id="references" class="level2">
+
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-rrd7" class="csl-entry" role="listitem">
+Rush, Desai R. 1998. <span>“The Quant Book.”</span>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

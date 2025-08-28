@@ -2,8 +2,12 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/2025-08-04-FinRAG/index.html",
-      "/posts/2025-07-09-test/index.html"
+      "/posts/4-2024-17-07-00/post_1.html",
+      "/posts/1-2025-08-04-FinRAG/index.html",
+      "/posts/3-2024-12-26-portfolio-trading-strat-00/index.html",
+      "/posts/2-2025-07-09-RAG-enhanced-multimodal/index.html",
+      "/posts/4-2024-17-07-00/index.html",
+      "/posts/5-2024-00/Basic_portfolio_optimization.html"
     ]
   }
 ]

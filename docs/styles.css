@@ -3,4 +3,8 @@
   color: #999999; /*6c757d*/
 }
 
-
+/* @media (max-width: 768px){
+  .quarto-sidebar {
+    display: none !important;
+  }
+} */
