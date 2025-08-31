@@ -1,0 +1,29 @@
+# Quarto caches and temporary files
+.quarto/
+.quarto-cache/
+*.log
+*.aux
+*.out
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# IDE/project files
+.vscode/
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
+
+# Ignore local environment or private configs
+.env
+config/private_config.yaml
+*.css
+*.scss
+CNAME
+
+# Ignore source QMD files
+*.qmd
+/.CNAME
+/.quarto/
