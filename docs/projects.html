@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Posts – Rushi Desai</title>
+<title>Projects – Rushi Desai</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -71,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-sample-test .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-sample-test'] = new List('listing-sample-test', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2TG7EMP7LD"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -128,35 +97,6 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -164,7 +104,7 @@ window.Quarto = {
 <body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -179,7 +119,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="./posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
@@ -193,7 +133,7 @@ window.Quarto = {
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -207,237 +147,128 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Posts</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Projects</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Posts</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Project List</h2>
+   
+  <ul>
+  <li><a href="#time-series-price-prediction-and-feature-engineering-with-pyspark" id="toc-time-series-price-prediction-and-feature-engineering-with-pyspark" class="nav-link active" data-scroll-target="#time-series-price-prediction-and-feature-engineering-with-pyspark">Time Series Price Prediction and Feature Engineering with PySpark</a></li>
+  <li><a href="#reinforcement-learning-for-derivatives-pricing-and-hedging" id="toc-reinforcement-learning-for-derivatives-pricing-and-hedging" class="nav-link" data-scroll-target="#reinforcement-learning-for-derivatives-pricing-and-hedging">Reinforcement Learning for Derivatives Pricing and Hedging</a></li>
+  <li><a href="#generative-ai-music-model-with-gans" id="toc-generative-ai-music-model-with-gans" class="nav-link" data-scroll-target="#generative-ai-music-model-with-gans">Generative AI Music Model with GANs</a></li>
+  <li><a href="#deep-cnn-for-text-to-image-generation" id="toc-deep-cnn-for-text-to-image-generation" class="nav-link" data-scroll-target="#deep-cnn-for-text-to-image-generation">Deep CNN for Text-to-Image Generation</a></li>
+  <li><a href="#portfolio-optimization-with-bloomberg-data-and-deep-learning" id="toc-portfolio-optimization-with-bloomberg-data-and-deep-learning" class="nav-link" data-scroll-target="#portfolio-optimization-with-bloomberg-data-and-deep-learning">Portfolio Optimization with Bloomberg Data and Deep Learning</a></li>
+  <li><a href="#intelligent-toll-collection-system-with-ai" id="toc-intelligent-toll-collection-system-with-ai" class="nav-link" data-scroll-target="#intelligent-toll-collection-system-with-ai">Intelligent Toll Collection System with AI</a></li>
+  <li><a href="#ant-bot-navigation-system-iit-bombay-e-yantra-challenge" id="toc-ant-bot-navigation-system-iit-bombay-e-yantra-challenge" class="nav-link" data-scroll-target="#ant-bot-navigation-system-iit-bombay-e-yantra-challenge">Ant-Bot Navigation System (IIT Bombay E-Yantra Challenge)</a></li>
+  <li><a href="#ai-powered-gameplay-with-reinforcement-learning" id="toc-ai-powered-gameplay-with-reinforcement-learning" class="nav-link" data-scroll-target="#ai-powered-gameplay-with-reinforcement-learning">AI-Powered Gameplay with Reinforcement Learning</a></li>
+  <li><a href="#full-stack-banking-website-with-high-performance-backend" id="toc-full-stack-banking-website-with-high-performance-backend" class="nav-link" data-scroll-target="#full-stack-banking-website-with-high-performance-backend">Full-Stack Banking Website with High-Performance Backend</a></li>
+  </ul>
+</nav>
+</nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QmFja3Rlc3Rpbmc=">Backtesting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QmFua2luZyUyMFJpc2s=">Banking Risk <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RmluYW5jZQ==">Finance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R2VuZXJhdGl2ZSUyMEFJ">Generative AI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TExN">LLM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TkxQ">NLP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9ydGZvbGlv">Portfolio <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9ydGZvbGlvJTIwT3B0aW1pemF0aW9u">Portfolio Optimization <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UkFH">RAG <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmV0dXJucw==">Returns <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmlzaw==">risk <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmlzayUyME1vZGVsaW5n">Risk Modeling <span class="quarto-category-count">(1)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-<!-- Feel free to roam around -->
-<div id="listing-sample-test" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-sample-test-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-sample-test'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1756278259978" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/6-2024/walkthrough.html" class="no-external">Hello, Quarto</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/6-2024/walkthrough.html" class="no-external">
-Markdown is an easy to read and write text format:
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/6-2024/walkthrough.html" class="no-external">
-<div class="listing-reading-time">1 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDR2VuZXJhdGl2ZSUyMEFJJTJDQmFua2luZyUyMFJpc2slMkNSQUclMkNMTE0=" data-listing-date-sort="1755057600000" data-listing-file-modified-sort="1756171371906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="897">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/1-2025-08-04-FinRAG/index.html" class="no-external">RAG-Enhanced Multimodal Risk Intelligence for Real-Time Banking Decisions</a>
-</h3>
-<div class="listing-categories">
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
 
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhdGl2ZSUyMEFJ'); return false;">Generative AI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmFua2luZyUyMFJpc2s='); return false;">Banking Risk</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UkFH'); return false;">RAG</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
-
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Projects</h1>
 </div>
-<div class="delink listing-description"><a href="./posts/1-2025-08-04-FinRAG/index.html" class="no-external">
-<p>Retrieval-Augmented Generation (RAG)-enhanced hybrid model that integrates structured financial…</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/1-2025-08-04-FinRAG/index.html" class="no-external">
-<div class="listing-date">
-Aug 13, 2025
-</div>
-<div class="listing-reading-time">5 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="RmluYW5jZSUyQ1BvcnRmb2xpbyUyQ01hY2hpbmUlMjBMZWFybmluZw==" data-listing-date-sort="1732597200000" data-listing-file-modified-sort="1756276116684" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3369">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/3-2024-12-26-portfolio-trading-strat-00/index.html" class="no-external">Financial Analysis of a Portfolio Trading Strategy: A Tryout Version</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RmluYW5jZQ=='); return false;">Finance</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UG9ydGZvbGlv'); return false;">Portfolio</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/3-2024-12-26-portfolio-trading-strat-00/index.html" class="no-external">
-<p>Exploration of systematic trading strategy to achieve higher risk-adjusted returns</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/3-2024-12-26-portfolio-trading-strat-00/index.html" class="no-external">
-<div class="listing-date">
-Nov 26, 2024
-</div>
-<div class="listing-reading-time">17 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="R2VuZXJhdGl2ZSUyMEFJJTJDTkxQJTJDRmluYW5jZSUyQ1Jpc2slMjBNb2RlbGluZyUyQ1JBRw==" data-listing-date-sort="1723521600000" data-listing-file-modified-sort="1756276991685" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1296">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2-2025-07-09-RAG-enhanced-multimodal/index.html" class="no-external">RiskRAG: Real-Time Credit Risk Assessment</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhdGl2ZSUyMEFJ'); return false;">Generative AI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TkxQ'); return false;">NLP</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RmluYW5jZQ=='); return false;">Finance</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmlzayUyME1vZGVsaW5n'); return false;">Risk Modeling</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UkFH'); return false;">RAG</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2-2025-07-09-RAG-enhanced-multimodal/index.html" class="no-external">
-<p>Focused on exploring credit risk evaluation with trial and error with RAG and Multimodal Learning</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2-2025-07-09-RAG-enhanced-multimodal/index.html" class="no-external">
-<div class="listing-date">
-Aug 13, 2024
-</div>
-<div class="listing-reading-time">7 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="QmFja3Rlc3RpbmclMkNyaXNrJTJDTWFjaGluZSUyMExlYXJuaW5nJTJDUG9ydGZvbGlvJTIwT3B0aW1pemF0aW9uJTJDUkFH" data-listing-date-sort="1721188800000" data-listing-file-modified-sort="1756334991518" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2841">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/4-2024-17-07-00/index.html" class="no-external">portfolio optimization using WCA</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmFja3Rlc3Rpbmc='); return false;">Backtesting</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmlzaw=='); return false;">risk</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UG9ydGZvbGlvJTIwT3B0aW1pemF0aW9u'); return false;">Portfolio Optimization</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UkFH'); return false;">RAG</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/4-2024-17-07-00/index.html" class="no-external">
-<p>demonstrates portfolio optimization with Machine Learning and Risk management</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/4-2024-17-07-00/index.html" class="no-external">
-<div class="listing-date">
-Jul 17, 2024
-</div>
-<div class="listing-reading-time">15 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="QmFja3Rlc3RpbmclMkNSZXR1cm5zJTJDUG9ydGZvbGlvJTIwT3B0aW1pemF0aW9u" data-listing-date-sort="1721188800000" data-listing-file-modified-sort="1756288113574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2862">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/5-2024-00/Basic_portfolio_optimization.html" class="no-external">Financial Analysis of a Portfolio Trading Strategy: A Tryout Version</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmFja3Rlc3Rpbmc='); return false;">Backtesting</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmV0dXJucw=='); return false;">Returns</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UG9ydGZvbGlvJTIwT3B0aW1pemF0aW9u'); return false;">Portfolio Optimization</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/5-2024-00/Basic_portfolio_optimization.html" class="no-external">
-<p>An initial exploration of a systematic trading strategy tailored to portfolio performance</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/5-2024-00/Basic_portfolio_optimization.html" class="no-external">
-<div class="listing-date">
-Jul 17, 2024
-</div>
-<div class="listing-reading-time">15 min</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p>…</p>
 
 
 
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>My projects span across System Design, Data Science and Financial domains. Each project demonstrates practical application of cutting-edge technologies to solve real-world problems. Feel free to explore the details below…</p>
+<hr>
+<section id="time-series-price-prediction-and-feature-engineering-with-pyspark" class="level2">
+<h2 class="anchored" data-anchor-id="time-series-price-prediction-and-feature-engineering-with-pyspark">Time Series Price Prediction and Feature Engineering with PySpark</h2>
+<p><strong>Description:</strong> Developed a robust time series forecasting system for financial market data using Apache Spark’s distributed computing capabilities.</p>
+<p><strong>Key Features:</strong> - Implemented advanced feature engineering techniques including lag features, rolling statistics, and technical indicators - Utilized PySpark for scalable data processing of large financial datasets - Applied ensemble methods combining ARIMA, LSTM, and Random Forest models - Achieved 15% improvement in prediction accuracy compared to baseline models</p>
+<p><strong>Technologies:</strong> PySpark, Python, Pandas, Scikit-learn, TensorFlow</p>
+<hr>
+</section>
+<section id="reinforcement-learning-for-derivatives-pricing-and-hedging" class="level2">
+<h2 class="anchored" data-anchor-id="reinforcement-learning-for-derivatives-pricing-and-hedging">Reinforcement Learning for Derivatives Pricing and Hedging</h2>
+<p><strong>Description:</strong> Built an innovative RL-based system for automated derivatives pricing and dynamic hedging strategies in volatile markets.</p>
+<p><strong>Key Features:</strong> - Implemented Deep Q-Network (DQN) and Actor-Critic algorithms for optimal hedging decisions - Developed Monte Carlo simulation framework for derivatives valuation - Created dynamic hedging strategies that adapt to market regime changes - Reduced hedging costs by 23% while maintaining risk exposure targets</p>
+<p><strong>Technologies:</strong> PyTorch, OpenAI Gym, NumPy, Pandas, Quantlab(Financial Mathematics Libraries)</p>
+<hr>
+</section>
+<section id="generative-ai-music-model-with-gans" class="level2">
+<h2 class="anchored" data-anchor-id="generative-ai-music-model-with-gans">Generative AI Music Model with GANs</h2>
+<p><strong>Description:</strong> Developed a complete generative adversarial network system that converts text descriptions into unique musical compositions.</p>
+<p><strong>Key Features:</strong> - Built custom GAN architecture with specialized discriminator for musical quality assessment - Implemented text-to-music mapping using transformer-based encoders - Generated 50+ unique music tracks across various genres and moods - Achieved 78% user satisfaction rate in blind listening tests</p>
+<p><strong>Technologies:</strong> PyTorch, Librosa, transformers, Diffusion Autoencoder</p>
+<hr>
+</section>
+<section id="deep-cnn-for-text-to-image-generation" class="level2">
+<h2 class="anchored" data-anchor-id="deep-cnn-for-text-to-image-generation">Deep CNN for Text-to-Image Generation</h2>
+<p><strong>Description:</strong> Engineered a convolutional neural network architecture specifically optimized for high-quality text-to-image synthesis.</p>
+<p><strong>Key Features:</strong> - Designed custom CNN architecture with attention mechanisms and skip connections - Implemented progressive training strategy for stable high-resolution generation - Achieved 30% improvement in image realism scores (FID, IS metrics) - Reduced training time by 40% through architectural optimizations</p>
+<p><strong>Technologies:</strong> PyTorch, TensorFlow, OpenCV, PIL, CUDA, Distributed Training</p>
+<hr>
+</section>
+<section id="portfolio-optimization-with-bloomberg-data-and-deep-learning" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-optimization-with-bloomberg-data-and-deep-learning">Portfolio Optimization with Bloomberg Data and Deep Learning</h2>
+<p><strong>Description:</strong> Developed an advanced portfolio optimization system using real-time Bloomberg market data and wavelet coherence analysis.</p>
+<p><strong>Key Features:</strong> - Integrated Bloomberg Terminal API for real-time market data feeds - Implemented Wavelet Coherence Analysis (WCA) for multi-scale market correlation detection - Applied deep learning models for dynamic asset allocation optimization - Achieved 18% improvement in Sharpe ratio compared to traditional Markowitz optimization</p>
+<p><strong>Technologies:</strong> Bloomberg Terminal API, Python, PyWavelets, TensorFlow, Pandas, NumPy</p>
+<hr>
+</section>
+<section id="intelligent-toll-collection-system-with-ai" class="level2">
+<h2 class="anchored" data-anchor-id="intelligent-toll-collection-system-with-ai">Intelligent Toll Collection System with AI</h2>
+<p><strong>Description:</strong> Built a comprehensive automated toll collection system using computer vision and traffic prediction with graph neural networks.</p>
+<p><strong>Key Features:</strong> - Developed license plate recognition system using YOLO and OCR technologies - Implemented Graph Neural Networks for traffic flow prediction and congestion forecasting - Created real-time processing pipeline handling 900+ transactions per second - Achieved 76% reduction in manual intervention and processing errors</p>
+<p><strong>Technologies:</strong> OpenCV, PyTorch, TensorFlow, Graph Neural Networks, Computer Vision, Real-time Systems</p>
+<hr>
+</section>
+<section id="ant-bot-navigation-system-iit-bombay-e-yantra-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="ant-bot-navigation-system-iit-bombay-e-yantra-challenge">Ant-Bot Navigation System (IIT Bombay E-Yantra Challenge)</h2>
+<p><strong>Description:</strong> Completed the prestigious IIT Bombay E-Yantra robotics challenge, building an autonomous navigation system for Ant-Bot.</p>
+<p><strong>Key Features:</strong> - Implemented real-time map generation and path planning algorithms - Developed obstacle detection and avoidance systems using sensor fusion - Created efficient navigation algorithms for complex maze environments - Successfully completed all challenge phases with optimal performance</p>
+<p><strong>Technologies:</strong> ROS (Robot Operating System), Python, C++, Computer Vision, Sensor Fusion</p>
+<hr>
+</section>
+<section id="ai-powered-gameplay-with-reinforcement-learning" class="level2">
+<h2 class="anchored" data-anchor-id="ai-powered-gameplay-with-reinforcement-learning">AI-Powered Gameplay with Reinforcement Learning</h2>
+<p><strong>Description:</strong> Developed intelligent AI agents for gaming using advanced reinforcement learning techniques and hyperparameter optimization.</p>
+<p><strong>Key Features:</strong> - Implemented various RL algorithms including PPO, A3C, and DQN - Built automated hyperparameter tuning system using Bayesian optimization - Created adaptive AI that learns and improves through gameplay - Demonstrated superior performance against human players in multiple game scenarios</p>
+<p><strong>Technologies:</strong> PyTorch, Lua, Python</p>
+<p><strong>Demo:</strong> <a href="https://youtube.com/channel/UCJjdWyLtrw7R20EbQ_Wts1A">YouTube Channel</a></p>
+<hr>
+</section>
+<section id="full-stack-banking-website-with-high-performance-backend" class="level2">
+<h2 class="anchored" data-anchor-id="full-stack-banking-website-with-high-performance-backend">Full-Stack Banking Website with High-Performance Backend</h2>
+<p><strong>Description:</strong> Engineered a complete banking platform with real-time transaction processing and enterprise-grade scalability.</p>
+<p><strong>Key Features:</strong> - Built microservices architecture supporting 900+ transactions per second - Implemented real-time transaction processing with ACID compliance - Developed secure authentication and authorization systems - Created responsive frontend with modern UI/UX design principles - Integrated with multiple payment gateways and banking APIs</p>
+<p><strong>Technologies:</strong> Node.js, React, PostgreSQL, Docker, Kubernetes, Microservices, REST APIs</p>
+<hr>
+<hr>
+<p><em>Note: Each project represents months of dedicated development, testing, and optimization. I’m passionate about applying cutting-edge technologies to solve complex real-world problems and continuously learning new approaches to enhance system performance and user experience.</em></p>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
