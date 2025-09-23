@@ -274,31 +274,31 @@ Develop a <strong>real-time, high-accuracy credit risk prediction system</strong
 </section>
 <section id="architecture-overview" class="level3">
 <h3 class="anchored" data-anchor-id="architecture-overview">3.2 Architecture Overview</h3>
-<pre><code>        ┌────────────────────┐
-        │ Structured Data     │
-        │ (Loan, Financials)  │
+<pre><code>        ┌─────────────────────┐
+        │   Structured Data   │
+        │  (Loan, Financials) │
         └─────────┬───────────┘
                   │
         ┌─────────▼───────────┐
-        │ Numerical Encoder    │  (MLP/TabTransformer)
+        │  Numerical Encoder  │  (MLP/TabTransformer)
         └─────────┬───────────┘
                   │
 ┌─────────────────▼─────────────────┐
-│   Multimodal Fusion Layer          │
+│     Multimodal Fusion Layer       │
 └─────────────────┬─────────────────┘
                   │
         ┌─────────▼───────────┐
-        │ Text Encoder         │  (FinBERT / LLaMA-3)
+        │     Text Encoder    │  (FinBERT / LLaMA-3)
         └─────────┬───────────┘
                   │
 ┌─────────────────▼─────────────────┐
-│ Retrieval-Augmented Generation     │
-│ (LangChain + FAISS / Vespa DB)     │
+│ Retrieval-Augmented Generation    │
+│ (LangChain + FAISS / Vespa DB)    │
 └─────────────────┬─────────────────┘
                   │
-            ┌─────▼─────┐
-            │  Classifier│
-            └─────┬─────┘
+            ┌─────▼───────┐
+            │  Classifier │
+            └─────┬───────┘
                   │
           Risk Score / Class</code></pre>
 </section>
@@ -374,31 +374,13 @@ Develop a <strong>real-time, high-accuracy credit risk prediction system</strong
 <section id="results-planned-evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="results-planned-evaluation">4. Results (Planned Evaluation)</h2>
 <ul>
-<li><p><strong>Evaluation Metrics:</strong> ROC-AUC, Precision-Recall AUC, Brier Score, SHAP feature attribution.</p></li>
-<li><p><strong>Baseline Models:</strong> Logistic Regression, LightGBM without textual features.</p></li>
-<li><p><strong>Expected Improvement:</strong> 5–12% AUC gain over baseline by integrating RAG-based textual context.</p></li>
-<li><p><strong>Evaluation Metrics:</strong> ROC-AUC, Precision-Recall AUC, Brier Score, SHAP feature attribution.</p></li>
-<li><p><strong>Baseline Models:</strong> Logistic Regression, LightGBM without textual features.</p></li>
-<li><p><strong>Expected Improvement:</strong> 5–12% AUC gain over baseline by integrating RAG-based textual context.</p></li>
-<li><p><strong>Evaluation Metrics:</strong> ROC-AUC, Precision-Recall AUC, Brier Score, SHAP feature attribution.</p></li>
-<li><p><strong>Baseline Models:</strong> Logistic Regression, LightGBM without textual features.</p></li>
-<li><p><strong>Expected Improvement:</strong> 5–12% AUC gain over baseline by integrating RAG-based textual context.</p></li>
-<li><p><strong>Evaluation Metrics:</strong> ROC-AUC, Precision-Recall AUC, Brier Score, SHAP feature attribution.</p></li>
-<li><p><strong>Baseline Models:</strong> Logistic Regression, LightGBM without textual features.</p></li>
-<li><p><strong>Expected Improvement:</strong> 5–12% AUC gain over baseline by integrating RAG-based textual context.</p></li>
-<li><p><strong>Evaluation Metrics:</strong> ROC-AUC, Precision-Recall AUC, Brier Score, SHAP feature attribution.</p></li>
-<li><p><strong>Baseline Models:</strong> Logistic Regression, LightGBM without textual features.</p></li>
-<li><p><strong>Expected Improvement:</strong> 5–12% AUC gain over baseline by integrating RAG-based textual context.</p></li>
+<li><strong>Evaluation Metrics:</strong> ROC-AUC, Precision-Recall AUC, Brier Score, SHAP feature attribution.</li>
+<li><strong>Baseline Models:</strong> Logistic Regression, LightGBM without textual features.</li>
+<li><strong>Expected Improvement:</strong> 5–12% AUC gain over baseline by integrating RAG-based textual context.</li>
 </ul>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">5. Conclusion</h2>
-<p>This work proposes <strong>RiskRAG</strong>, a framework that combines <strong>structured financial modeling</strong> and <strong>dynamic retrieval of unstructured financial knowledge</strong> for <strong>real-time credit risk assessment</strong>. The architecture is extensible to other domains such as <strong>fraud detection, regulatory compliance monitoring, and supply chain risk management</strong>.</p>
-<p>By unifying RAG with multimodal fusion, RiskRAG enables <strong>more accurate, context-aware, and explainable</strong> credit risk predictions, setting the stage for deployment in high-stakes financial decision-making.</p>
-<p>This work proposes <strong>RiskRAG</strong>, a framework that combines <strong>structured financial modeling</strong> and <strong>dynamic retrieval of unstructured financial knowledge</strong> for <strong>real-time credit risk assessment</strong>. The architecture is extensible to other domains such as <strong>fraud detection, regulatory compliance monitoring, and supply chain risk management</strong>.</p>
-<p>By unifying RAG with multimodal fusion, RiskRAG enables <strong>more accurate, context-aware, and explainable</strong> credit risk predictions, setting the stage for deployment in high-stakes financial decision-making.</p>
-<p>This work proposes <strong>RiskRAG</strong>, a framework that combines <strong>structured financial modeling</strong> and <strong>dynamic retrieval of unstructured financial knowledge</strong> for <strong>real-time credit risk assessment</strong>. The architecture is extensible to other domains such as <strong>fraud detection, regulatory compliance monitoring, and supply chain risk management</strong>.</p>
-<p>By unifying RAG with multimodal fusion, RiskRAG enables <strong>more accurate, context-aware, and explainable</strong> credit risk predictions, setting the stage for deployment in high-stakes financial decision-making.</p>
 <p>This work proposes <strong>RiskRAG</strong>, a framework that combines <strong>structured financial modeling</strong> and <strong>dynamic retrieval of unstructured financial knowledge</strong> for <strong>real-time credit risk assessment</strong>. The architecture is extensible to other domains such as <strong>fraud detection, regulatory compliance monitoring, and supply chain risk management</strong>.</p>
 <p>By unifying RAG with multimodal fusion, RiskRAG enables <strong>more accurate, context-aware, and explainable</strong> credit risk predictions, setting the stage for deployment in high-stakes financial decision-making.</p>
 <hr>
