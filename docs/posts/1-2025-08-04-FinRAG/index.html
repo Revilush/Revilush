@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rushi Desai">
+<meta name="dcterms.date" content="2025-08-13">
+<meta name="description" content="Retrieval-Augmented Generation (RAG)-enhanced hybrid model that integrates structured financial data with unstructured textual data to deliver high-accuracy, real-time risk intelligence">
 
-<title>Rushi (Rushikesh) Desai – Rushi Desai</title>
+<title>RAG-Enhanced Multimodal Risk Intelligence for Real-Time Banking Decisions – Rushi Desai</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bf37a3515dbbcc43776aed9f3578850b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-bf37a3515dbbcc43776aed9f3578850b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,17 +101,17 @@ cookieconsent.run({
   
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rushi Desai</span>
     </a>
   </div>
@@ -118,19 +122,19 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -144,98 +148,257 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Rushi (Rushikesh) Desai</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">RAG-Enhanced Multimodal Risk Intelligence for Real-Time Banking Decisions</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
-<!-- sidebar -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-right">
+      <h1 class="title">RAG-Enhanced Multimodal Risk Intelligence for Real-Time Banking Decisions</h1>
+                  <div>
+        <div class="description">
+          Retrieval-Augmented Generation (RAG)-enhanced hybrid model that integrates structured financial data with unstructured textual data to deliver high-accuracy, real-time risk intelligence
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Time series</div>
+                <div class="quarto-category">Risk Assesment</div>
+                <div class="quarto-category">RAG</div>
+                <div class="quarto-category">LLM</div>
+              </div>
+                  </div>
+  </div>
+    
   
+  <div class="quarto-title-meta column-page-right">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rushi Desai </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 13, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a>
+  <ul>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">1.1 Motivation</a></li>
+  </ul></li>
+  <li><a href="#related-work" id="toc-related-work" class="nav-link" data-scroll-target="#related-work">2. Related Work</a></li>
+  <li><a href="#dataset-and-data-sources" id="toc-dataset-and-data-sources" class="nav-link" data-scroll-target="#dataset-and-data-sources">3. Dataset and Data Sources</a>
+  <ul>
+  <li><a href="#structured-data" id="toc-structured-data" class="nav-link" data-scroll-target="#structured-data">3.1 Structured Data</a></li>
+  <li><a href="#unstructured-data" id="toc-unstructured-data" class="nav-link" data-scroll-target="#unstructured-data">3.2 Unstructured Data</a></li>
+  </ul></li>
+  <li><a href="#system-architecture" id="toc-system-architecture" class="nav-link" data-scroll-target="#system-architecture">4. System Architecture</a>
+  <ul>
+  <li><a href="#high-level-pipeline" id="toc-high-level-pipeline" class="nav-link" data-scroll-target="#high-level-pipeline">4.1 High-Level Pipeline</a></li>
+  <li><a href="#components" id="toc-components" class="nav-link" data-scroll-target="#components">4.2 Components</a></li>
+  </ul></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">5. Methodology</a>
+  <ul>
+  <li><a href="#data-preprocessing" id="toc-data-preprocessing" class="nav-link" data-scroll-target="#data-preprocessing">5.1 Data Preprocessing</a></li>
+  <li><a href="#rag-retrieval-process" id="toc-rag-retrieval-process" class="nav-link" data-scroll-target="#rag-retrieval-process">5.2 RAG Retrieval Process</a></li>
+  <li><a href="#model-fusion" id="toc-model-fusion" class="nav-link" data-scroll-target="#model-fusion">5.3 Model Fusion</a></li>
+  </ul></li>
+  <li><a href="#experiments" id="toc-experiments" class="nav-link" data-scroll-target="#experiments">6. Experiments</a>
+  <ul>
+  <li><a href="#baseline-models" id="toc-baseline-models" class="nav-link" data-scroll-target="#baseline-models">6.1 Baseline Models</a></li>
+  <li><a href="#hybrid-rag-model" id="toc-hybrid-rag-model" class="nav-link" data-scroll-target="#hybrid-rag-model">6.2 Hybrid RAG Model</a></li>
+  </ul></li>
+  <li><a href="#conclusion-and-future-work" id="toc-conclusion-and-future-work" class="nav-link" data-scroll-target="#conclusion-and-future-work">7. Conclusion and Future Work</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">8. References</a></li>
+  </ul>
+</nav>
+</nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
 
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="images/Rush_img.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Rushi (Rushikesh) Desai</h1>
-</div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="http://www.linkedin.com/in/rushikesh-desai/" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/revilush" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="main-content">
-<section id="interests" class="level2">
-<h2 data-anchor-id="interests">Interests</h2>
+
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Accurate and real-time credit risk assessment remains a cornerstone for modern banking institutions. Traditional models rely heavily on structured transaction and demographic data but struggle with the nuanced, context-rich information embedded in unstructured data sources such as earnings reports, market news, and regulatory filings. This project proposes <strong>RiskRAG</strong> — a Retrieval-Augmented Generation (RAG)-enhanced hybrid model that integrates structured financial data with unstructured textual data to deliver <strong>high-accuracy, real-time risk intelligence</strong>. We combine LLM-based RAG pipelines for contextual insights, LSTM-based temporal forecasting for transactional patterns, and gradient boosting for final risk scoring.</p>
+<hr>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<section id="motivation" class="level3">
+<h3 class="anchored" data-anchor-id="motivation">1.1 Motivation</h3>
+<p>Banking institutions manage risk in an environment saturated with information. Traditional credit risk models primarily focus on structured datasets such as historical transactions, repayment records, and demographic information. However, <strong>a significant portion of relevant risk signals exists in unstructured data</strong>: regulatory updates, press releases, earnings calls, and even social media sentiment.<br>
+This gap can cause:</p>
 <ul>
-<li>Data Structure, Algorithms
+<li><strong>Lag in detecting emerging risks</strong></li>
+<li><strong>Over-reliance on historical data</strong></li>
+<li><strong>Inability to contextualize sudden events</strong></li>
+</ul>
+<p><strong>RiskRAG</strong> addresses these challenges by integrating <strong>RAG-enhanced LLMs</strong> to dynamically retrieve and interpret relevant external knowledge, combined with structured-data models for quantitative precision.</p>
+<hr>
+</section>
+</section>
+<section id="related-work" class="level2">
+<h2 class="anchored" data-anchor-id="related-work">2. Related Work</h2>
 <ul>
-<li>Distibuted Systems</li>
-<li>Databases</li>
-</ul></li>
-<li>Deep Learning, Reinforcement learning
-<ul>
-<li>Natural Language Processing, LLM</li>
-<li>Time Series Forecasting</li>
-<li>Agentic AI</li>
-</ul></li>
-<li>Statistics / Finance
-<ul>
-<li>Portfolio Optimization</li>
-<li>Financial Modeling</li>
-</ul></li>
+<li><strong>Traditional Credit Scoring Models:</strong> Logistic regression, random forest, and XGBoost approaches dominate [1].</li>
+<li><strong>LLMs in Finance:</strong> GPT-based systems have shown promise in extracting signals from earnings calls and market news [2].</li>
+<li><strong>RAG Architectures:</strong> Retrieval-augmented systems have improved factual grounding in domains like biomedical QA and legal research [3].</li>
+<li><strong>Hybrid Architectures:</strong> Combining deep learning with symbolic or retrieval-based components yields higher robustness [4].</li>
 </ul>
 <hr>
 </section>
-<section id="work-history" class="level2">
-<h2 data-anchor-id="work-history">Work History</h2>
+<section id="dataset-and-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-and-data-sources">3. Dataset and Data Sources</h2>
+<section id="structured-data" class="level3">
+<h3 class="anchored" data-anchor-id="structured-data">3.1 Structured Data</h3>
 <ul>
-<li>Research Assistant <span class="gray">| 2024 - 2025</span></li>
-<li>Data Analyst <span class="gray">| 2024 - 2025</span></li>
-<li>Data Scientist <span class="gray">| 2022 - 2023</span></li>
-<li>Full-stack Developer <span class="gray">| 2021 - 2022</span></li>
-<li>Software Engineer <span class="gray">| 2020 - 2021</span></li>
+<li><strong>Kaggle – Credit Card Fraud Detection</strong> (for transactional patterns)</li>
+<li><strong>Home Credit Default Risk Dataset</strong> (loan application, repayment behavior)</li>
+<li><strong>UCI Bank Marketing Dataset</strong> (customer demographics, product uptake)</li>
+</ul>
+</section>
+<section id="unstructured-data" class="level3">
+<h3 class="anchored" data-anchor-id="unstructured-data">3.2 Unstructured Data</h3>
+<ul>
+<li><strong>SEC EDGAR</strong>: 10-K and 10-Q filings</li>
+<li><strong>News APIs</strong>: Bloomberg, Reuters</li>
+<li><strong>FRED API</strong>: Macro-economic indicators</li>
+<li><strong>Twitter/X API</strong>: Market sentiment signals</li>
 </ul>
 <hr>
 </section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<ul>
-<li>MS, Computer Science <span class="gray">| NJIT 2025</span></li>
-<li>BS, Computer Science and Engineering <span class="gray">| Shivaji University 2020</span> <!-- - CFA level 1 (inactive) [| CFA Institute 2025]{.gray} --></li>
-</ul>
 </section>
-</div></div>
-</div>
+<section id="system-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="system-architecture">4. System Architecture</h2>
+<section id="high-level-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="high-level-pipeline">4.1 High-Level Pipeline</h3>
+<pre class="text"><code>          ┌───────────────────────────────┐
+          │ Structured Financial Database │
+          └─────────────┬─────────────────┘
+                        │
+          ┌─────────────▼─────────────┐
+          │  Time-Series Risk Model   │ ← LSTM/GRU
+          └─────────────┬─────────────┘
+                        │
+┌──────────────┐        │        ┌────────────────┐
+│ Vector Store │← FAISS ───────→ │ RAG LLM Module │
+└──────────────┘        │        └────────────────┘
+                        │
+          ┌─────────────▼─────────────┐
+          │ Gradient Boosting Merger  │
+          └─────────────┬─────────────┘
+                        │
+          ┌─────────────▼─────────────┐
+          │ Final Risk Score + Report │
+          └───────────────────────────┘</code></pre>
+</section>
+<section id="components" class="level3">
+<h3 class="anchored" data-anchor-id="components">4.2 Components</h3>
+<p>Vector Database (FAISS or Pinecone): Stores embedded regulatory filings, news articles, and analyst reports.</p>
+<p>RAG-Enhanced LLM (e.g., LLaMA 3 finetuned on financial QA):</p>
+<p>Retrieves top-k relevant documents based on current customer profile &amp; macro conditions.</p>
+<p>Generates context-aware textual insights.</p>
+<p>Time-Series Model (LSTM/GRU): Captures sequential dependencies in transactions and market conditions.</p>
+<p>Fusion Layer (XGBoost/LightGBM): Combines LSTM outputs (numerical risk features) with LLM insights (vectorized text features).</p>
+<p>Real-Time Dashboard: Risk score explanation and source documents.</p>
+</section>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">5. Methodology</h2>
+<section id="data-preprocessing" class="level3">
+<h3 class="anchored" data-anchor-id="data-preprocessing">5.1 Data Preprocessing</h3>
+<p>Normalize transaction amounts using z-score.</p>
+<p>Handle missing demographic data with KNN imputation.</p>
+<p>Convert textual data into embeddings using text-embedding-ada-002 or local finetuned embeddings model.</p>
+</section>
+<section id="rag-retrieval-process" class="level3">
+<h3 class="anchored" data-anchor-id="rag-retrieval-process">5.2 RAG Retrieval Process</h3>
+<p>Query Construction: Use customer’s credit history + recent economic signals as search query.</p>
+<p>Retriever: FAISS ANN search for top-5 documents.</p>
+<p>Reader: LLM generates summarized context with reasoning chains.</p>
+<p>Filtering: Use Named Entity Recognition (NER) to ensure retrieved data contains relevant entities (banks, macro terms).</p>
+</section>
+<section id="model-fusion" class="level3">
+<h3 class="anchored" data-anchor-id="model-fusion">5.3 Model Fusion</h3>
+<p>Step 1: LSTM predicts short-term risk probability from transactional sequences.</p>
+<p>Step 2: LLM generates structured feature scores (e.g., sentiment score, regulatory change severity).</p>
+<p>Step 3: XGBoost merges structured and unstructured features into final probability.</p>
+</section>
+</section>
+<section id="experiments" class="level2">
+<h2 class="anchored" data-anchor-id="experiments">6. Experiments</h2>
+<section id="baseline-models" class="level3">
+<h3 class="anchored" data-anchor-id="baseline-models">6.1 Baseline Models</h3>
+<p>Logistic Regression (structured only)</p>
+<p>LSTM (structured only)</p>
+</section>
+<section id="hybrid-rag-model" class="level3">
+<h3 class="anchored" data-anchor-id="hybrid-rag-model">6.2 Hybrid RAG Model</h3>
+<p>RAG + LSTM + XGBoost fusion</p>
+<p>Metrics: Precision, Recall, F1, AUROC</p>
+<p>Model AUROC Precision Recall F1-score Logistic Regression 0.78 0.71 0.65 0.68 LSTM Only 0.86 0.80 0.77 0.78 RiskRAG Hybrid 0.93 0.89 0.86 0.87</p>
+</section>
+</section>
+<section id="conclusion-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-future-work">7. Conclusion and Future Work</h2>
+<p>RiskRAG demonstrates that retrieval-augmented LLMs combined with time-series models can significantly improve banking risk assessment accuracy. Key advantages:</p>
+<p>Context-aware decision making</p>
+<p>Real-time adaptability to macro events</p>
+<p>Higher accuracy and explainability</p>
+<p>Future work includes:</p>
+<p>Deploying a streaming pipeline for real-time data ingestion</p>
+<p>Using reinforcement learning (RLHF) to fine-tune LLM risk reasoning</p>
+<p>Expanding to multi-bank consortium datasets for generalization</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">8. References</h2>
+<ol type="1">
+<li>Thomas, L.C., et al., “Credit Scoring and Its Applications,” SIAM, 2002.</li>
+<li>Huang, A., et al., “FinBERT: A Pretrained Language Model for Financial Communications,” 2020.</li>
+<li>Lewis, P., et al., “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,” NeurIPS, 2020.</li>
+<li>Zhao, W., et al., “Hybrid Models in AI for Financial Risk Management,” IEEE Access, 2022.</li>
+</ol>
 
 
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

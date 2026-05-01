@@ -1,0 +1,276 @@
+:root {
+  color-scheme: light;
+}
+
+body:has(.bella-app) {
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(228, 92, 45, 0.12), transparent 30%),
+    linear-gradient(180deg, #fcfaf6 0%, #f4eee3 100%);
+}
+
+body:has(.bella-app) #title-block-header,
+body:has(.bella-app) #quarto-sidebar,
+body:has(.bella-app) #quarto-sidebar-glass,
+body:has(.bella-app) .footer {
+  display: none !important;
+}
+
+body:has(.bella-app) #quarto-content {
+  padding: 0;
+}
+
+.bella-app {
+  --bella-surface: rgba(255, 252, 246, 0.94);
+  --bella-surface-strong: #fffaf0;
+  --bella-border: rgba(81, 55, 33, 0.14);
+  --bella-text: #2a2018;
+  --bella-muted: #6d6155;
+  --bella-accent: #bf4f27;
+  --bella-accent-soft: #f8e0d3;
+  --bella-danger-soft: #f6ddd7;
+  --bella-shadow: 0 16px 40px rgba(80, 49, 23, 0.12);
+  min-height: 100vh;
+  color: var(--bella-text);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.bella-app *,
+.bella-app *::before,
+.bella-app *::after {
+  box-sizing: border-box;
+}
+
+.bella-shell {
+  width: min(100%, 38rem);
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 1rem 0.9rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.bella-panel,
+.bella-card,
+.bella-controls,
+.bella-empty,
+.bella-noscript {
+  background: var(--bella-surface);
+  border: 1px solid var(--bella-border);
+  border-radius: 1.15rem;
+  box-shadow: var(--bella-shadow);
+}
+
+.bella-panel {
+  padding: 1rem;
+}
+
+.bella-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.bella-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.bella-empty p,
+.bella-noscript,
+.bella-filter-label {
+  color: var(--bella-muted);
+}
+
+.bella-empty p,
+.bella-filter-label,
+.bella-noscript {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.bella-progress {
+  margin-top: 0.9rem;
+}
+
+.bella-mini-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  font-size: 0.86rem;
+  color: var(--bella-muted);
+}
+
+.bella-toolbar,
+.bella-filter-row {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.bella-toolbar {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.bella-select,
+.bella-button,
+.bella-card-button {
+  appearance: none;
+  border: 1px solid var(--bella-border);
+  border-radius: 0.95rem;
+  font: inherit;
+}
+
+.bella-select {
+  width: 100%;
+  padding: 0.78rem 0.9rem;
+  background: var(--bella-surface-strong);
+  color: var(--bella-text);
+}
+
+.bella-button,
+.bella-card-button {
+  min-height: 3rem;
+  padding: 0.78rem 0.95rem;
+  background: var(--bella-surface-strong);
+  color: var(--bella-text);
+  text-align: center;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.bella-button.is-danger {
+  background: var(--bella-danger-soft);
+}
+
+.bella-button:active,
+.bella-card-button:active {
+  transform: scale(0.98);
+}
+
+.bella-card {
+  position: relative;
+  min-height: 20rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bella-card-button {
+  width: 100%;
+  min-height: 20rem;
+  border: 0;
+  border-radius: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 246, 236, 0.92)),
+    linear-gradient(135deg, rgba(191, 79, 39, 0.12), rgba(191, 79, 39, 0));
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.2rem;
+}
+
+.bella-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.bella-badge,
+.bella-mode-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: rgba(191, 79, 39, 0.1);
+  color: var(--bella-accent);
+}
+
+.bella-card-body {
+  display: grid;
+  gap: 0.8rem;
+  align-content: center;
+  flex: 1;
+}
+
+.bella-side-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bella-muted);
+}
+
+.bella-card-text {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.bella-card-answer {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.bella-controls {
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.bella-controls-single {
+  grid-template-columns: 1fr;
+}
+
+.bella-flip-button {
+  background: var(--bella-accent-soft);
+}
+
+.bella-score-again {
+  background: #f5ddd8;
+}
+
+.bella-score-good {
+  background: #ddeedc;
+}
+
+.bella-footer-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.bella-button-ghost {
+  min-height: 2.6rem;
+  padding-inline: 1.1rem;
+  background: rgba(255, 250, 240, 0.72);
+}
+
+.bella-empty,
+.bella-noscript {
+  padding: 1.1rem;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .bella-shell {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .bella-card,
+  .bella-card-button {
+    min-height: 24rem;
+  }
+}

@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rushi Desai">
+<meta name="dcterms.date" content="2024-08-13">
+<meta name="description" content="Focused on exploring credit risk evaluation with trial and error with RAG and Multimodal Learning">
 
-<title>Rushi (Rushikesh) Desai – Rushi Desai</title>
+<title>RiskRAG: Real-Time Credit Risk Assessment – Rushi Desai</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bf37a3515dbbcc43776aed9f3578850b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-bf37a3515dbbcc43776aed9f3578850b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,17 +101,17 @@ cookieconsent.run({
   
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rushi Desai</span>
     </a>
   </div>
@@ -118,19 +122,19 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -144,98 +148,262 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Rushi (Rushikesh) Desai</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">RiskRAG: Real-Time Credit Risk Assessment</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
-<!-- sidebar -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-right">
+      <h1 class="title">RiskRAG: Real-Time Credit Risk Assessment</h1>
+                  <div>
+        <div class="description">
+          Focused on exploring credit risk evaluation with trial and error with RAG and Multimodal Learning
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">NLP</div>
+                <div class="quarto-category">LLM</div>
+                <div class="quarto-category">Credit Risk</div>
+                <div class="quarto-category">RAG</div>
+              </div>
+                  </div>
+  </div>
+    
   
+  <div class="quarto-title-meta column-page-right">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rushi Desai </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 13, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a></li>
+  <li><a href="#project-goal" id="toc-project-goal" class="nav-link" data-scroll-target="#project-goal">2. Project Goal</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">3. Methodology</a>
+  <ul>
+  <li><a href="#dataset-sources" id="toc-dataset-sources" class="nav-link" data-scroll-target="#dataset-sources">3.1 Dataset Sources</a></li>
+  <li><a href="#architecture-overview" id="toc-architecture-overview" class="nav-link" data-scroll-target="#architecture-overview">3.2 Architecture Overview</a></li>
+  <li><a href="#technical-stack" id="toc-technical-stack" class="nav-link" data-scroll-target="#technical-stack">3.3 Technical Stack</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">3.4 Workflow</a></li>
+  </ul></li>
+  <li><a href="#results-planned-evaluation" id="toc-results-planned-evaluation" class="nav-link" data-scroll-target="#results-planned-evaluation">4. Results (Planned Evaluation)</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">5. Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">6. References</a></li>
+  </ul>
+</nav>
+</nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
 
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="images/Rush_img.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Rushi (Rushikesh) Desai</h1>
-</div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="http://www.linkedin.com/in/rushikesh-desai/" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/revilush" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="main-content">
-<section id="interests" class="level2">
-<h2 data-anchor-id="interests">Interests</h2>
+
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>This project presents <strong>RiskRAG</strong>, a novel real-time credit risk assessment framework that integrates <strong>Retrieval-Augmented Generation (RAG)</strong> with multimodal machine learning models. The system leverages structured financial metrics, unstructured financial documents, and macroeconomic indicators to predict borrower risk profiles more accurately than conventional credit scoring methods. RAG is used to dynamically retrieve relevant regulatory, market, and borrower-specific text data, which is then processed alongside structured numerical features in a multimodal neural network. The approach achieves <strong>state-of-the-art predictive accuracy</strong> while maintaining explainability through retrieved evidence.</p>
+<hr>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<p>Credit risk assessment is the cornerstone of modern banking operations. Traditional scoring models (e.g., logistic regression, gradient boosting) rely heavily on structured numerical datasets but fail to incorporate <strong>contextual information</strong> from unstructured data sources such as <strong>annual reports, news sentiment, regulatory filings, and borrower communications</strong>.</p>
+<p>Recent advances in <strong>Large Language Models (LLMs)</strong> and <strong>RAG pipelines</strong> enable financial institutions to enrich predictive models with domain-specific knowledge retrieved at query time. This project aims to <strong>merge structured credit risk modeling with dynamic retrieval of textual and macroeconomic evidence</strong>.</p>
+<hr>
+</section>
+<section id="project-goal" class="level2">
+<h2 class="anchored" data-anchor-id="project-goal">2. Project Goal</h2>
+<p><strong>Primary Objective:</strong><br>
+Develop a <strong>real-time, high-accuracy credit risk prediction system</strong> that fuses structured and unstructured data using RAG and multimodal deep learning.</p>
+<p><strong>Key Goals:</strong> - <strong>Enhance prediction accuracy</strong> by supplementing structured features with real-time textual evidence. - <strong>Ensure explainability</strong> via retrieved sources for each prediction. - <strong>Support dynamic updates</strong> from evolving market and borrower conditions.</p>
+<hr>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">3. Methodology</h2>
+<section id="dataset-sources" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-sources">3.1 Dataset Sources</h3>
 <ul>
-<li>Data Structure, Algorithms
+<li><strong>Structured Credit Data</strong>
 <ul>
-<li>Distibuted Systems</li>
-<li>Databases</li>
+<li><a href="https://www.kaggle.com/c/home-credit-default-risk/data">Home Credit Default Risk Dataset (Kaggle)</a> – loan applications, repayment history, demographics.</li>
+<li><a href="https://capitalmarkets.fanniemae.com/credit-risk-transfer/loan-performance-data">Fannie Mae Single-Family Loan Performance Data</a> – U.S. mortgage loan data.</li>
 </ul></li>
-<li>Deep Learning, Reinforcement learning
+<li><strong>Unstructured Financial Documents</strong>
 <ul>
-<li>Natural Language Processing, LLM</li>
-<li>Time Series Forecasting</li>
-<li>Agentic AI</li>
+<li><a href="https://www.sec.gov/edgar/search/">EDGAR SEC Filings (10-K, 10-Q)</a> – borrower and company disclosures.</li>
+<li><a href="https://www.kaggle.com/datasets">Financial News Articles</a> – e.g., Bloomberg, Reuters datasets.</li>
 </ul></li>
-<li>Statistics / Finance
+<li><strong>Macroeconomic Indicators</strong>
 <ul>
-<li>Portfolio Optimization</li>
-<li>Financial Modeling</li>
+<li><a href="https://data.worldbank.org/">World Bank Data</a></li>
+<li><a href="https://fred.stlouisfed.org/">FRED Economic Data</a></li>
 </ul></li>
 </ul>
 <hr>
 </section>
-<section id="work-history" class="level2">
-<h2 data-anchor-id="work-history">Work History</h2>
+<section id="architecture-overview" class="level3">
+<h3 class="anchored" data-anchor-id="architecture-overview">3.2 Architecture Overview</h3>
+<pre><code>        ┌─────────────────────┐
+        │   Structured Data   │
+        │  (Loan, Financials) │
+        └─────────┬───────────┘
+                  │
+        ┌─────────▼───────────┐
+        │  Numerical Encoder  │  (MLP/TabTransformer)
+        └─────────┬───────────┘
+                  │
+┌─────────────────▼─────────────────┐
+│     Multimodal Fusion Layer       │
+└─────────────────┬─────────────────┘
+                  │
+        ┌─────────▼───────────┐
+        │     Text Encoder    │  (FinBERT / LLaMA-3)
+        └─────────┬───────────┘
+                  │
+┌─────────────────▼─────────────────┐
+│ Retrieval-Augmented Generation    │
+│ (LangChain + FAISS / Vespa DB)    │
+└─────────────────┬─────────────────┘
+                  │
+            ┌─────▼───────┐
+            │  Classifier │
+            └─────┬───────┘
+                  │
+          Risk Score / Class</code></pre>
+</section>
+<section id="technical-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technical-stack">3.3 Technical Stack</h3>
 <ul>
-<li>Research Assistant <span class="gray">| 2024 - 2025</span></li>
-<li>Data Analyst <span class="gray">| 2024 - 2025</span></li>
-<li>Data Scientist <span class="gray">| 2022 - 2023</span></li>
-<li>Full-stack Developer <span class="gray">| 2021 - 2022</span></li>
-<li>Software Engineer <span class="gray">| 2020 - 2021</span></li>
+<li><strong>Retrieval Layer:</strong>
+<ul>
+<li><strong>Vector Store:</strong> FAISS / Weaviate<br>
+</li>
+<li><strong>Retriever:</strong> LangChain retriever with hybrid search (BM25 + dense embeddings)<br>
+</li>
+<li><strong>Embeddings:</strong> <code>sentence-transformers/all-MiniLM-L6-v2</code> for general text, <code>FinBERT</code> for finance domain.</li>
+</ul></li>
+<li><strong>Text Encoder:</strong>
+<ul>
+<li>FinBERT for sentiment extraction.<br>
+</li>
+<li>LLaMA-3 (quantized) for contextual embeddings.</li>
+</ul></li>
+<li><strong>Numerical Encoder:</strong>
+<ul>
+<li>TabTransformer or MLP with BatchNorm and dropout.</li>
+</ul></li>
+<li><strong>Fusion Layer:</strong>
+<ul>
+<li>Concatenation + gated attention to weight modalities.</li>
+</ul></li>
+<li><strong>Classifier:</strong>
+<ul>
+<li>XGBoost for explainability or a final fully connected neural network.</li>
+</ul></li>
 </ul>
 <hr>
 </section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
+<section id="workflow" class="level3">
+<h3 class="anchored" data-anchor-id="workflow">3.4 Workflow</h3>
+<ol type="1">
+<li><strong>Data Preprocessing</strong>
 <ul>
-<li>MS, Computer Science <span class="gray">| NJIT 2025</span></li>
-<li>BS, Computer Science and Engineering <span class="gray">| Shivaji University 2020</span> <!-- - CFA level 1 (inactive) [| CFA Institute 2025]{.gray} --></li>
+<li>Structured: Missing value imputation, feature engineering, normalization.<br>
+</li>
+<li>Unstructured: Text cleaning, stopword removal, entity extraction.</li>
+</ul></li>
+<li><strong>Vector Indexing</strong>
+<ul>
+<li>Store borrower/company filings, market news, and regulatory updates in FAISS index.<br>
+</li>
+</ul></li>
+<li><strong>Query-Time Retrieval</strong>
+<ul>
+<li>Retrieve most relevant documents for the loan/customer being scored.<br>
+</li>
+</ul></li>
+<li><strong>Embedding + Fusion</strong>
+<ul>
+<li>Encode retrieved documents and structured loan data.<br>
+</li>
+</ul></li>
+<li><strong>Risk Prediction</strong>
+<ul>
+<li>Classify into risk tiers (Low, Medium, High) or predict probability of default.<br>
+</li>
+</ul></li>
+<li><strong>Explainability</strong>
+<ul>
+<li>Output top retrieved documents with relevance scores.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="results-planned-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="results-planned-evaluation">4. Results (Planned Evaluation)</h2>
+<ul>
+<li><strong>Evaluation Metrics:</strong> ROC-AUC, Precision-Recall AUC, Brier Score, SHAP feature attribution.</li>
+<li><strong>Baseline Models:</strong> Logistic Regression, LightGBM without textual features.</li>
+<li><strong>Expected Improvement:</strong> 5–12% AUC gain over baseline by integrating RAG-based textual context.</li>
 </ul>
 </section>
-</div></div>
-</div>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">5. Conclusion</h2>
+<p>This work proposes <strong>RiskRAG</strong>, a framework that combines <strong>structured financial modeling</strong> and <strong>dynamic retrieval of unstructured financial knowledge</strong> for <strong>real-time credit risk assessment</strong>. The architecture is extensible to other domains such as <strong>fraud detection, regulatory compliance monitoring, and supply chain risk management</strong>.</p>
+<p>By unifying RAG with multimodal fusion, RiskRAG enables <strong>more accurate, context-aware, and explainable</strong> credit risk predictions, setting the stage for deployment in high-stakes financial decision-making.</p>
+<hr>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">6. References</h2>
+<ol type="1">
+<li>Devlin, J., et al.&nbsp;“BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” <em>NAACL-HLT</em> (2019).</li>
+<li>Araci, D. “FinBERT: Financial Sentiment Analysis with Pre-trained Language Models.” <em>arXiv preprint</em> (2019).</li>
+<li>Huang, Z., et al.&nbsp;“TabTransformer: Tabular Data Modeling Using Contextual Embeddings.” <em>arXiv preprint</em> (2020).</li>
+<li>Lewis, P., et al.&nbsp;“Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” <em>NeurIPS</em> (2020).</li>
+</ol>
 
 
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
