@@ -1,0 +1,37 @@
+---
+title: "Bella Legal Terminology Study"
+title-block: false
+navbar: false
+sidebar: false
+search: false
+bread-crumbs: false
+page-navigation: false
+repo-actions: false
+resources:
+  - bella.css
+  - bella.js
+  - bella-data.js
+format:
+  html:
+    page-layout: custom
+    toc: false
+    css: bella.css
+    include-in-header:
+      text: |
+        <meta name="robots" content="noindex,nofollow">
+        <script>
+          window.QuartoPreview = window.QuartoPreview || { init: function () {} };
+        </script>
+    include-after-body:
+      - text: |
+          <script src="bella-data.js"></script>
+          <script src="bella.js"></script>
+---
+
+<div class="bella-app" id="bella-app">
+<noscript>
+<div class="bella-shell">
+<p class="bella-noscript">This study page needs JavaScript enabled to run the flashcards.</p>
+</div>
+</noscript>
+</div>
